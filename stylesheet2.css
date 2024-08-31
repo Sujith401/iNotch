@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+}
+  /* Zoom effect on hover */
+  nav ul li:hover {
+    transform: scale(1.2);  
+  }
+  
+.hero {
+    background: url('build1.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+.hero h1, p{
+    color:black;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color:white;
+}
+
+.hero-content a {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hero-content a:hover {
+    background-color: #e64a19;
+}
+
+.services1 {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.services1 h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-container1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item1 {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-item1 img {
+    width: 100%;
+    height: 250px;
+}
+
+.service-item1 h3 {
+    margin: 20px 0 10px;
+}
+
+.service-item1 p {
+    color: #555;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.services, .training, .about, .contact {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.services h2, .training h2, .about h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+    height:700px;
+   
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide {
+    min-width: 100%;
+    height: 5%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer .container p{
+    color: white;
+}
+footer {
+    background-color: #004080;
+    color:white;
+    text-align: center;
+    padding: 20px;
+} 
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
